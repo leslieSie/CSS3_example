@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3_正方体的构建 例1</title>
+	<style type="text/css">
+		div div img{
+			width:300px;
+			height:300px;
+			position:absolute;
+			/* -webkit-transition: all 0.8s; */
+		}
+		div div{
+			-webkit-transition: all 1s;
+		}
+		#img1{
+			-webkit-transform: translateZ(150px);
+			/* -webkit-transition: all 0.8s; */
+		}
+		#img2{
+			-webkit-transform: rotateX(-90deg) translateZ(150px);
+			/* -webkit-transition: all 0.8s; */
+		}
+		#img3{
+			-webkit-transform: rotateZ(180deg) translateZ(-150px);
+		}
+		#img4{
+			-webkit-transform: rotateX(90deg) translateZ(150px);
+		}
+		#img5{
+			-webkit-transform:rotateY(90deg) translateZ(150px);
+		}
+		#img6{
+			-webkit-transform: rotateY(-90deg) translateZ(150px);
+		}
+		/* div div:hover{
+			-webkit-transform: rotateX(270deg);
+		} */
+	</style>
+</head>
+<body>
+	<div style="margin-left: 100px;height:300px;width:300px;position:absolute;perspective: 1000px;">
+		<div id="box" style="transform-style: preserve-3d;height:300px;width:300px;position: relative;">
+			<img id="img1" src="img/1.jpg" />
+			<img id="img2" src="img/2.jpg" />
+			<img id="img3" src="img/3.jpg" />
+			<img id="img4" src="img/4.jpg" />
+			<img id="img5" src="img/5.jpg" />
+			<img id="img6" src="img/6.jpg" />
+		</div>
+	</div>
+	<div style="margin-left: 700px;margin-top: 100px;">
+		<input id="btn1" type="button" value="向上翻转90度" />
+		<input id="btn2" type="button" name="" value="向左翻转90度" />
+		<input id="btn3" type="button" value="向右翻转90度" />
+		<input id="btn4" type="button" name="" value="向下翻转90度" />
+	</div>
+	<script type="text/javascript" src="../jquery.js" ></script>
+	<script type="text/javascript" src="global.js"></script>
+</body>
+</html>
