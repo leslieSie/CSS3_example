@@ -1,0 +1,46 @@
+.container{
+	position:absolute;
+	width:80%;
+	margin:0 auto;
+}
+.card{
+	float: left;
+	margin-left: 100px;
+	margin-top: 50px;
+	width:200px;
+	height:380px;
+}
+.card img{
+	position: absolute;
+}
+.front,.back{
+	transition:all 0.4s;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	backface-visibility:hidden;
+}
+.back{
+	-webkit-transform:rotateY(180deg);
+	-moz-transform:rotateY(180deg);
+	-ms-transform:rotateY(180deg);
+	transform:rotateY(180deg);
+}
+.front{
+	-webkit-transform:rotateY(0deg);
+	-moz-transform:rotateY(0deg);
+	-ms-transform:rotateY(0deg);
+	transform:rotateY(0deg);
+}
+.card:hover .back{
+	-webkit-transform:rotateY(0deg);
+	-moz-transform:rotateY(0deg);
+	-ms-transform:rotateY(0deg);
+	transform:rotateY(0deg);
+}
+.card:hover .front{
+	-webkit-transform:rotateY(180deg);
+	-moz-transform:rotateY(180deg);
+	-ms-transform:rotateY(180deg);
+	transform:rotateY(180deg);
+}
